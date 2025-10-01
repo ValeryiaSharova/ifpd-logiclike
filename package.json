@@ -1,0 +1,30 @@
+{
+  "name": "ifpd-ll",
+  "version": "0.0.1",
+  "description": "Ideas for product development",
+  "homepage": "https://github.com/ValeryiaSharova/ifpd-logiclike#readme",
+  "repository": "git@github.com:ValeryiaSharova/ifpd-logiclike.git",
+  "bugs": {
+    "url": "https://github.com/ValeryiaSharova/ifpd-logiclike/issues"
+  },
+  "private": true,
+  "scripts": {
+    "prepare": "husky",
+    "prettier": "prettier --check ."
+  },
+  "dependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^5.2.0",
+    "husky": "^9.1.7",
+    "prettier": "^3.4.2"
+  },
+  "workspaces": [
+    "be-api",
+    "be-db",
+    "fe-web",
+    "shared"
+  ],
+  "packageManager": "yarn@4.3.1",
+  "engines": {
+    "node": "22.*"
+  }
+}

@@ -1,0 +1,16 @@
+dist/
+node_modules/
+/.pnp
+.pnp.js
+*.d.ts
+__mocks__
+_generated.ts
+
+.DS_Store
+
+yarn-debug.log*
+yarn-error.log*
+
+typings
+vitest.config.ts
+vitest.globalSetup.ts

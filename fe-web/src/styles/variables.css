@@ -1,0 +1,91 @@
+:root {
+  /* font family */
+  --FONT_FAMILY_NUNITO: 'Nunito';
+
+  /* font size */
+  --FONT_SIZE_10: 10px;
+  --FONT_SIZE_12: 12px;
+  --FONT_SIZE_14: 14px;
+  --FONT_SIZE_16: 16px;
+  --FONT_SIZE_20: 20px;
+  --FONT_SIZE_24: 28px;
+  --FONT_SIZE_32: 32px;
+  --FONT_SIZE_40: 40px;
+  --FONT_SIZE_60: 60px;
+
+  /* font weight */
+  --FONT_WEIGHT_400: 400;
+  --FONT_WEIGHT_500: 500;
+  --FONT_WEIGHT_600: 600;
+  --FONT_WEIGHT_700: 700;
+
+  /* line height */
+  --LINE_HEIGHT_14: 14px;
+  --LINE_HEIGHT_16: 16px;
+  --LINE_HEIGHT_20: 20px;
+  --LINE_HEIGHT_24: 24px;
+  --LINE_HEIGHT_32: 32px;
+  --LINE_HEIGHT_40: 40px;
+  --LINE_HEIGHT_72: 72px;
+
+  /* colors */
+  --GREY_0: #fff;
+  --GREY_150: #e4e5e6;
+  --GREY_300: #c9cbce;
+  --GREY_400: #b7b9bd;
+  --GREY_500: #a5a8ad;
+  --GREY_700: #6b6d71;
+  --GREY_900: #313234;
+
+  --BLUE_500: #4f82a8;
+
+  --RED_200: #ffc6cc;
+  --RED_500: #fc374d;
+  --RED_600: #ea182f;
+  --RED_700: #ce1126;
+
+  --GREEN_100: #e1ebe0;
+  --GREEN_200: #c2d8c3;
+  --GREEN_500: #4c7d54;
+  --GREEN_600: #38633f;
+
+  --YELLOW_500: #c58f2d;
+
+  /* additional colors*/
+  --BORDER: #14151626;
+
+  /* sizes */
+  --SIZE_0: 0;
+  --SIZE_1: 1px;
+  --SIZE_2: 2px;
+  --SIZE_3: 3px;
+  --SIZE_4: 4px;
+  --SIZE_5: 5px;
+  --SIZE_6: 6px;
+  --SIZE_8: 8px;
+  --SIZE_12: 12px;
+  --SIZE_13: 13px;
+  --SIZE_15: 15px;
+  --SIZE_16: 16px;
+  --SIZE_20: 20px;
+  --SIZE_24: 24px;
+  --SIZE_32: 32px;
+  --SIZE_40: 40px;
+  --SIZE_432: 432px;
+  --SIZE_560: 560px;
+
+  /* animations */
+  --TRANSITION_OPACITY: opacity 0.1s;
+  --TRANSITION_BUTTON: background-color 0.5s outline 0.5s box-shadow 0.5s border
+    0.5s;
+  --TRANSITION_INPUT: border-color 0.5s, box-shadow 0.5s;
+
+  /* box-shadows */
+  --SHADOW: 0px 0px 8px 0px #1415161a, 0px 2px 4px 0px #14151605;
+  --INPUT_SIMPLE_SHADOW: 0px 0px 0px 3px #c2d8c3;
+  --INPUT_ERROR_SHADOW: 0px 0px 0px 3px #ffc6cc;
+
+  /* opacity */
+  --OPACITY_DEFAULT: 1;
+  --OPACITY_HOVER: 0.8;
+}

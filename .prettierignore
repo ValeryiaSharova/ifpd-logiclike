@@ -1,0 +1,6 @@
+_generated.ts
+build/
+dist/
+
+be-db/data
+fe-web/src/utils/api.ts

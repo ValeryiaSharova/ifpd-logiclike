@@ -1,0 +1,200 @@
+/* Weight */
+
+.regular {
+  font-weight: var(--FONT_WEIGHT_400);
+}
+
+.medium {
+  font-weight: var(--FONT_WEIGHT_500);
+}
+
+.semibold {
+  font-weight: var(--FONT_WEIGHT_600);
+}
+
+.bold {
+  font-weight: var(--FONT_WEIGHT_700);
+}
+
+/* Header */
+
+.h1 {
+  font-size: var(--FONT_SIZE_32);
+  line-height: var(--LINE_HEIGHT_40);
+  font-weight: var(--FONT_WEIGHT_400);
+}
+
+.h2 {
+  font-size: var(--FONT_SIZE_24);
+  line-height: var(--LINE_HEIGHT_32);
+  font-weight: var(--FONT_WEIGHT_500);
+}
+
+/* Body */
+
+.body1 {
+  font-size: var(--FONT_SIZE_20);
+  line-height: var(--LINE_HEIGHT_24);
+  font-weight: var(--FONT_WEIGHT_500);
+}
+
+.body2 {
+  font-size: var(--FONT_SIZE_16);
+  line-height: var(--LINE_HEIGHT_24);
+  font-weight: var(--FONT_WEIGHT_500);
+}
+
+.body3 {
+  font-size: var(--FONT_SIZE_14);
+  line-height: var(--LINE_HEIGHT_20);
+  font-weight: var(--FONT_WEIGHT_500);
+}
+
+/* Caption */
+
+.caption1 {
+  font-size: var(--FONT_SIZE_12);
+  line-height: var(--LINE_HEIGHT_16);
+  font-weight: var(--FONT_WEIGHT_600);
+}
+
+.caption2 {
+  font-size: var(--FONT_SIZE_10);
+  line-height: var(--LINE_HEIGHT_12);
+  font-weight: var(--FONT_WEIGHT_600);
+}
+
+/* Button */
+
+.button1 {
+  font-size: var(--FONT_SIZE_16);
+  line-height: var(--LINE_HEIGHT_24);
+  font-weight: var(--FONT_WEIGHT_600);
+}
+
+/* Icon */
+
+span.ant-btn-icon {
+  display: flex;
+}
+
+/* Toast */
+
+.ant-notification {
+  top: var(--SIZE_0) !important;
+  right: var(--SIZE_0) !important;
+  bottom: auto !important;
+  margin-right: var(--SIZE_0) !important;
+}
+
+.ant-notification-notice-wrapper {
+  border-radius: var(--SIZE_8) !important;
+}
+
+.ant-notification-notice {
+  padding: var(--SIZE_12) !important;
+  border-radius: var(--SIZE_0) !important;
+  box-shadow: none !important;
+  max-width: 100% !important;
+  width: 100vw !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  gap: var(--SIZE_16) !important;
+}
+
+.ant-notification-notice-message,
+.ant-notification-notice-description {
+  color: var(--GREY_0) !important;
+  font-size: var(--FONT_SIZE_16);
+  line-height: var(--LINE_HEIGHT_24);
+  font-weight: var(--FONT_WEIGHT_500);
+  margin: var(--SIZE_0) !important;
+  margin-inline-start: var(--SIZE_0) !important;
+  padding-inline-end: var(--SIZE_0) !important;
+}
+
+.ant-notification-notice-success {
+  background: var(--GREEN_500) !important;
+}
+
+.ant-notification-notice-info {
+  background: var(--BLUE_500) !important;
+}
+
+.ant-notification-notice-info .ant-notification-notice-icon {
+  display: none;
+}
+
+.ant-notification-notice-error {
+  background: var(--RED_500) !important;
+}
+
+.ant-notification-notice-warning {
+  background: var(--YELLOW_500) !important;
+}
+
+.ant-notification-notice-icon {
+  position: relative !important;
+}
+
+.ant-notification-notice-with-icon {
+  display: flex;
+  gap: var(--SIZE_8);
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.ant-notification-notice-close {
+  position: static !important;
+  min-width: var(--SIZE_16) !important;
+  min-height: var(--SIZE_16) !important;
+  width: var(--SIZE_16) !important;
+  height: var(--SIZE_16) !important;
+  padding: var(--SIZE_12);
+}
+
+.ant-notification-notice-message:empty {
+  display: none;
+}
+
+.ant-notification-notice-with-icon:has(.ant-notification-notice-message:empty) {
+  flex-wrap: nowrap !important;
+}
+
+.ant-notification-notice-icon {
+  font-size: var(--SIZE_20) !important;
+  opacity: var(--OPACITY_HOVER);
+}
+
+/* Tablet */
+
+@media screen and (min-width: 320px) {
+  .h2 {
+    font-size: var(--FONT_SIZE_28);
+    line-height: var(--LINE_HEIGHT_40);
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 900px) {
+  .h1 {
+    font-size: var(--FONT_SIZE_60);
+    line-height: var(--LINE_HEIGHT_72);
+  }
+
+  .h2 {
+    font-size: var(--FONT_SIZE_32);
+  }
+
+  .ant-notification {
+    top: var(--SIZE_24) !important;
+    right: var(--SIZE_24) !important;
+  }
+
+  .ant-notification-notice {
+    width: var(--SIZE_560) !important;
+    border-radius: var(--SIZE_8) !important;
+    border: var(--SIZE_2) solid var(--BORDER);
+  }
+}

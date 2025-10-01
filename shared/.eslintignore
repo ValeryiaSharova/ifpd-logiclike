@@ -1,0 +1,13 @@
+build/
+node_modules/
+/.pnp
+.pnp.js
+*.d.ts
+
+.DS_Store
+
+yarn-debug.log*
+yarn-error.log*
+
+typings
+vitest.config.ts

@@ -1,0 +1,23 @@
+.link:hover {
+  text-decoration: underline;
+}
+
+.black,
+.black:hover {
+  color: var(--GREY_900);
+}
+
+.blue,
+.blue:hover {
+  color: var(--BLUE_500);
+}
+
+.grey,
+.grey:hover {
+  color: var(--GREY_700);
+}
+
+.white,
+.white:hover {
+  color: var(--GREY_0);
+}

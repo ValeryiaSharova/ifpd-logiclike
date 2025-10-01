@@ -1,0 +1,163 @@
+.wrapper {
+  border: var(--SIZE_1) solid;
+  box-shadow: none !important;
+  transition: var(--TRANSITION_BUTTON);
+  display: flex;
+  align-items: center;
+  gap: var(--SIZE_4);
+}
+
+.size40:global(.ant-btn.ant-btn-default) {
+  height: var(--SIZE_40);
+  border-radius: var(--SIZE_8);
+  padding: var(--SIZE_8);
+}
+
+/* solid primary */
+
+.solidPrimary:global(.ant-btn.ant-btn-default) {
+  background-color: var(--GREEN_500);
+  border-color: var(--GREEN_500);
+  color: var(--GREY_0);
+}
+
+.solidPrimary:global(.ant-btn.ant-btn-default):hover {
+  background-color: var(--GREEN_600);
+  color: var(--GREY_0);
+  border-color: var(--GREEN_600);
+  box-shadow: var(--SHADOW);
+}
+
+.solidPrimary:global(.ant-btn.ant-btn-default):not(:disabled):active {
+  outline: var(--SIZE_3) solid var(--GREEN_200);
+  color: var(--GREY_0);
+  border-color: var(--GREEN_500);
+  background-color: var(--GREEN_500);
+}
+
+.solidPrimary:global(.ant-btn.ant-btn-default):focus-visible {
+  outline: var(--SIZE_2) solid var(--GREEN_500);
+}
+
+.solidPrimary div span {
+  color: var(--GREY_0);
+}
+
+/* outlined primary */
+
+.outlinedPrimary:global(.ant-btn.ant-btn-default) {
+  background-color: var(--GREY_0);
+  color: var(--GREY_900);
+  border-color: var(--GREY_150);
+}
+
+.outlinedPrimary:global(.ant-btn.ant-btn-default):hover {
+  background-color: var(--GREY_0);
+  color: var(--GREY_900);
+  box-shadow: var(--SHADOW);
+  border-color: var(--GREY_400);
+}
+
+.outlinedPrimary:global(.ant-btn.ant-btn-default):not(:disabled):active {
+  outline: var(--SIZE_3) solid var(--GREEN_200);
+  color: var(--GREY_900);
+  border-color: var(--GREY_150);
+  background-color: var(--GREY_0);
+}
+
+.outlinedPrimary:global(.ant-btn.ant-btn-default):focus-visible {
+  outline: var(--SIZE_2) solid var(--GREEN_500);
+}
+
+.outlinedPrimary div span {
+  color: var(--GREY_900);
+}
+
+/* text primary */
+
+.textPrimary:global(.ant-btn.ant-btn-default) {
+  background-color: var(--GREY_0);
+  color: var(--GREEN_500);
+  border-color: transparent;
+}
+
+.textPrimary:global(.ant-btn.ant-btn-default):hover {
+  background-color: var(--GREY_0);
+  color: var(--GREEN_600);
+  border-color: transparent;
+}
+
+.textPrimary:global(.ant-btn.ant-btn-default):not(:disabled):active {
+  outline: var(--SIZE_3) solid var(--GREEN_200);
+  color: var(--GREEN_500);
+  border-color: var(--GREEN_500);
+  background-color: var(--GREY_0);
+}
+
+.textPrimary:global(.ant-btn.ant-btn-default):focus-visible {
+  outline: var(--SIZE_2) solid var(--GREEN_500);
+}
+
+.textPrimary div span {
+  color: var(--GREEN_500);
+}
+
+/* solid danger */
+
+.solidDanger:global(.ant-btn.ant-btn-default) {
+  background-color: var(--RED_500);
+  border-color: var(--RED_500);
+  color: var(--GREY_0);
+}
+
+.solidDanger:global(.ant-btn.ant-btn-default):hover {
+  background-color: var(--RED_600);
+  color: var(--GREY_0);
+  border-color: var(--RED_600);
+  box-shadow: var(--SHADOW);
+}
+
+.solidDanger:global(.ant-btn.ant-btn-default):not(:disabled):active {
+  outline: var(--SIZE_3) solid var(--RED_200);
+  color: var(--GREY_0);
+  border-color: var(--RED_500);
+  background-color: var(--RED_500);
+}
+
+.solidDanger:global(.ant-btn.ant-btn-default):focus-visible {
+  outline: var(--SIZE_2) solid var(--RED_500);
+}
+
+.solidDanger div span {
+  color: var(--GREY_0);
+}
+
+/* outlined danger */
+
+.outlinedDanger:global(.ant-btn.ant-btn-default) {
+  background-color: var(--GREY_0);
+  color: var(--RED_600);
+  border-color: var(--RED_600);
+}
+
+.outlinedDanger:global(.ant-btn.ant-btn-default):hover {
+  background-color: var(--GREY_0);
+  color: var(--RED_700);
+  box-shadow: var(--SHADOW);
+  border-color: var(--RED_700);
+}
+
+.outlinedDanger:global(.ant-btn.ant-btn-default):not(:disabled):active {
+  outline: var(--SIZE_3) solid var(--RED_200);
+  color: var(--RED_600);
+  border-color: var(--RED_600);
+  background-color: var(--GREY_0);
+}
+
+.outlinedDanger:global(.ant-btn.ant-btn-default):focus-visible {
+  outline: var(--SIZE_2) solid var(--RED_600);
+}
+
+.outlinedDanger div span {
+  color: var(--RED_600);
+}

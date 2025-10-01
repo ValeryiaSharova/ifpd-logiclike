@@ -1,0 +1,54 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0.0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"POT-Creation-Date: 2024-07-31T00:00:00.000Z\n"
+"PO-Revision-Date: 2024-07-31T00:00:00.000Z\n"
+
+msgctxt "base"
+msgid "components.organisms.Page.title"
+msgstr "IFPD-LL"
+
+msgctxt "base"
+msgid "components.routes.pages.Error404.text"
+msgstr "Страница не найдена"
+
+msgctxt "base"
+msgid "components.routes.pages.Root.title"
+msgstr "IFPD-LL"
+
+msgctxt "events"
+msgid "error.alreadyVoted"
+msgstr "Вы уже проголосовали за эту идею"
+
+msgctxt "events"
+msgid "error.bad.endpoint"
+msgstr "Что-то пошло не так"
+
+msgctxt "events"
+msgid "error.bad.request"
+msgstr "Неверный формат запроса"
+
+msgctxt "events"
+msgid "error.invalid.id"
+msgstr "Неверный формат id"
+
+msgctxt "events"
+msgid "error.notFound.idea"
+msgstr "Идея не найдена"
+
+msgctxt "events"
+msgid "error.permissionDenied"
+msgstr "Доступ запрещен"
+
+msgctxt "events"
+msgid "error.tooManyRequests"
+msgstr "Слишком много запросов, попробуйте позднее"
+
+msgctxt "events"
+msgid "error.tooManyVoices"
+msgstr "Вы уже проголосовали 10 раз"
+

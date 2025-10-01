@@ -1,0 +1,4 @@
+.wrapper {
+  color: var(--GREY_500) !important;
+  border-color: var(--GREY_150) !important;
+}

@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  font-family: var(--FONT_FAMILY_NUNITO);
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: -webkit-fill-available;
+}
+
+html,
+body,
+#root,
+#root > div {
+  height: 100%;
+}
+
+.blockCenter {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100vh;
+  justify-content: center;
+}
+
+.documents ul {
+  padding-bottom: var(--SIZE_15);
+}
+
+.documents ul li {
+  padding-bottom: var(--SIZE_5);
+  padding-top: var(--SIZE_5);
+}

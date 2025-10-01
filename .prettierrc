@@ -1,0 +1,23 @@
+{
+  "plugins": ["@trivago/prettier-plugin-sort-imports"],
+  "trailingComma": "es5",
+  "singleQuote": true,
+  "importOrder": [
+    "^dayjs/locale/(.*)$",
+    "^src/plugins/env$",
+    "^(child_process|fs/promises|fs|http|path)$",
+    "<THIRD_PARTY_MODULES>",
+    "^(shared|be-db)$",
+    "^src/threads$",
+    "^package.json$",
+    "^src$",
+    "^src/(?!assets)((?!\\.css$|/styles$).)*$",
+    "^(src/assets|assets)/(.*)$",
+    "^(?!src)(.*)\\.css$",
+    "^src/styles/(.*)\\.css$",
+    "^src/(.*)$",
+    "^[./]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
+}

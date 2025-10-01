@@ -1,0 +1,16 @@
+Table "app"."ideas" {
+  "id" bigint [pk, not null]
+  "name" text [not null]
+  "count" integer [not null]
+}
+
+Table "app"."ip_voices" {
+  "ip" inet [pk, not null]
+  "ideas_ids" jsonb [not null]
+}
+
+Table "pgmigrations" {
+  "id" integer [pk, not null]
+  "name" "character varying(255)" [not null]
+  "run_on" timestamp [not null]
+}
