@@ -2,10 +2,6 @@
 
 Backend
 
-## Infrastructure
-
-TODO
-
 ## Pre requirements
 
 - `node.js`: `22.*`
@@ -35,10 +31,6 @@ Just merge the changes into the `main` branch.
 2. run `yarn run build:po`
 3. run `yarn run build`
 4. run `NODE_ENV=production yarn run start`
-
-## How to check?
-
-Send a GET request to `/` → the response will be "version: x.x.x"
 
 ## Swagger
 

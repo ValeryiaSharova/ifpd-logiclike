@@ -4,10 +4,6 @@ Frontend
 
 This project was bootstrapped with [Vite](https://vite.dev/).
 
-## Infrastructure
-
-TODO
-
 ## Environment variables
 
 You can run a project in several modes, depending on the mode, one or another backend will be used.
@@ -18,11 +14,7 @@ Available env modes:
 - `staging`
 - `production`
 
-You can run a project in any of the listed modes. To do this, create a file `.env.local` in the root of the repository (**note that this file should be ignored by the `git`**) and put the line `VITE_PUBLIC_ENV` in it. For example:
-
-```sh
-echo "VITE_PUBLIC_ENV=staging" >> .env
-```
+You can run a project in any of the listed modes. To do this, create a file `.env.local` in the root of the repository (**note that this file should be ignored by the `git`**) and put the line `VITE_PUBLIC_ENV` in it.
 
 For details see [code](src/constants/env.ts) and [Vite documentation](https://vite.dev/guide/env-and-mode.html).
 

@@ -1,10 +1,6 @@
 # IFPD-LL
 
-Ideas for product development - logicLike
-
-## Infrastructure
-
-TODO
+Ideas for product development - LogicLike
 
 ## Environment variables
 
@@ -16,11 +12,7 @@ Available env modes:
 - `staging`
 - `production`
 
-You can run a project in any of the listed modes. To do this, create a file `.env.local` in the root of the repository (**note that this file should be ignored by the `git`**) and put the line `PUBLIC_ENV` in it. For example:
-
-```sh
-echo "PUBLIC_ENV=staging" >> .env
-```
+You can run a project in any of the listed modes. To do this, create a file `.env.local` in the root of the repository (**note that this file should be ignored by the `git`**) and put the line `PUBLIC_ENV` in it.
 
 For details see code and [dotenv-flow documentation](https://www.npmjs.com/package/dotenv-flow).
 
@@ -28,26 +20,16 @@ For details see code and [dotenv-flow documentation](https://www.npmjs.com/packa
 
 - `node.js`: `22.*`
 - `yarn`: `4.*`
-- `tmux`: `*` (optional, for local launch)
 
 ## Development
 
-1. install `node`, `yarn`, `tmux`
-
-```sh
-brew install tmux
-```
-
-2. run `chmod 0755 ./tmux.sh`
-3. run `chmod 0755 ./checks.sh`
-4. run `yarn install` on repository root
-5. install all packages (see instructions):
+1. install `node`, `yarn`
+2. run `yarn install` on repository root
+3. install all packages (see instructions):
    - [be-api](be-api/README.md)
    - [be-db](be-db/README.md)
    - [fe-web](fe-web/README.md)
    - [shared](shared/README.md)
-6. update `tmux` config: `cp -R ./.tmux.conf ~/.tmux.conf`
-7. run `./tmux.sh` on repository root
 
 ## Available Scripts
 
@@ -63,6 +45,12 @@ See the [documentation](https://typicode.github.io/husky/) for the `husky` packa
 Run prettier.\
 See the [documentation](https://prettier.io/docs/en/cli.html) for the `prettier` package for details.
 
-## Docker
+## Quick start
 
-TODO
+1. run `yarn install` on repository root
+2. install postgres (see the [instruction](be-db/README.md))
+3. run `yarn run pg:init` on be-db
+4. run `yarn run pg:start` on be-db
+5. run `yarn run pg:migrate up` on be-db
+6. run `yarn run watch` on be-api
+7. run `yarn run watch` on fe-web

@@ -76,7 +76,7 @@ echo 'export LC_ALL=en_US.UTF-8' >> ~/.bashrc
 
 Settings for connect:
 
-- Name: `sttork`
+- Name: `ifpd`
 - Tag: `local`
 - Host: `127.0.0.1`
 - Port: `5300`
@@ -92,7 +92,7 @@ Expected result: _Connection is ok_
 
 Settings for connect:
 
-- Name: `sttork`
+- Name: `ifpd`
 - Tag: `local`
 - Host: `127.0.0.1`
 - Port: `5300`

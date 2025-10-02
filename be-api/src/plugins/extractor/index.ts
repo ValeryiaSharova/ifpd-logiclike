@@ -65,6 +65,10 @@ export const extractorConfig: ExtractorOptions = {
   onSchemaReady: async (schema) => {
     const { validators } = getData(schema);
 
+    if (validators.length === 0) {
+      return;
+    }
+
     const text = compileText(Validators.normalize(validators));
 
     await saveText(text);
