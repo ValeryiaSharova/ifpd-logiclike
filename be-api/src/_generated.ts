@@ -75,9 +75,11 @@ export type Handler<
 
 export type RootOptions = object;
 
-export type RootGetReply = RootGetReplyStatus200;
+export type AppIdeasGetReply = AppIdeasGetReplyStatus200;
 
-export type IdPutReply = IdPutReplyStatus200 | Error;
+export type AppIdeasIdPutReply = AppIdeasIdPutReplyStatus200 | Error;
+
+export type AppIpVoicesGetReply = AppIpVoicesGetReplyStatus200;
 
 export type SwaggerGet = object;
 
@@ -95,7 +97,7 @@ export type EnumsClient = 'web';
 
 export type EnumsEnvironment = 'local' | 'staging' | 'production';
 
-export type EnumsLocale = 'en' | 'ru';
+export type EnumsLocale = 'ru';
 
 export type EnumsMode = 'production' | 'development' | 'test';
 
@@ -105,11 +107,14 @@ export interface API {
   '*': {
     OPTIONS: RootOptions;
   };
-  '/': {
-    GET: RootGet;
+  '/app/ideas': {
+    GET: AppIdeasGet;
   };
-  '/:id': {
-    PUT: IdPut;
+  '/app/ideas/:id': {
+    PUT: AppIdeasIdPut;
+  };
+  '/app/ip-voices': {
+    GET: AppIpVoicesGet;
   };
   '/swagger': {
     GET: SwaggerGet;
@@ -135,11 +140,11 @@ export interface API {
 /**
  * Get ideas list
  */
-export interface RootGet {
-  Reply: RootGetReply;
+export interface AppIdeasGet {
+  Reply: AppIdeasGetReply;
 }
 
-export interface RootGetReplyStatus200 {
+export interface AppIdeasGetReplyStatus200 {
   model: 'appIdea';
   list: AppIdea[];
 }
@@ -156,16 +161,16 @@ export interface AppIdea {
 /**
  * Update idea by id
  */
-export interface IdPut {
-  Params: IdPutParams;
-  Reply: IdPutReply;
+export interface AppIdeasIdPut {
+  Params: AppIdeasIdPutParams;
+  Reply: AppIdeasIdPutReply;
 }
 
-export interface IdPutParams {
+export interface AppIdeasIdPutParams {
   id: string;
 }
 
-export interface IdPutReplyStatus200 {
+export interface AppIdeasIdPutReplyStatus200 {
   model: 'appIdea';
   item: AppIdea;
 }
@@ -176,6 +181,26 @@ export interface IdPutReplyStatus200 {
 export interface Error {
   error: string;
   message?: string;
+}
+
+/**
+ * Get current ip voices
+ */
+export interface AppIpVoicesGet {
+  Reply: AppIpVoicesGetReply;
+}
+
+export interface AppIpVoicesGetReplyStatus200 {
+  model: 'appIpVoice';
+  item: AppIpVoice;
+}
+
+/**
+ * AppIpVoice model
+ */
+export interface AppIpVoice {
+  ip: string;
+  ideas_ids: number[];
 }
 
 /**
@@ -230,4 +255,5 @@ export interface Status {
  */
 export interface Models {
   appIdea: AppIdea;
+  appIpVoice: AppIpVoice;
 }

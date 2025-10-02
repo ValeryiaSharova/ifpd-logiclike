@@ -16,8 +16,10 @@ export type Groups = PagesToGroups[Pages];
 export type GroupsToPages = Reverse<PagesToGroups>;
 
 export const ENDPOINTS = {
-  '/': ['GET'],
-  '/:id': ['PUT'],
+  '/app/ideas': ['GET'],
+  '/app/ideas/:id': ['PUT'],
+
+  '/app/ip-voices': ['GET'],
 } as const;
 
 export type Path = {

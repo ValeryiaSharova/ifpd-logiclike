@@ -27,6 +27,10 @@ msgstr ""
 "что помогаешь нам развиваться!"
 
 msgctxt "base"
+msgid "components.routes.pages.App.toast"
+msgstr "Вы проголосовали за идею {id}"
+
+msgctxt "base"
 msgid "components.routes.pages.Error404.text"
 msgstr "Страница не найдена"
 

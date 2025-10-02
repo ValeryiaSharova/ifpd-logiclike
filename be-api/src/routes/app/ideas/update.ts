@@ -1,6 +1,6 @@
 import { ERRORS, HTTP_STATUS } from 'shared';
 
-import { Handler, IdPut } from 'src/_generated';
+import { AppIdeasIdPut, Handler } from 'src/_generated';
 import {
   getIdeaById,
   updateIdeaById,
@@ -34,7 +34,7 @@ export const { onSuccess, options } = config('Update idea by id', {
   },
 });
 
-export const handler: Handler<IdPut> = async (request, reply) => {
+export const handler: Handler<AppIdeasIdPut> = async (request, reply) => {
   const { id } = request.params;
 
   const idea = await checkAndRun(id, async () => getIdeaById(Number(id)));

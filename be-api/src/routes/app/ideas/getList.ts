@@ -1,4 +1,4 @@
-import { Handler, RootGet } from 'src/_generated';
+import { AppIdeasGet, Handler } from 'src/_generated';
 import { getListIdeas } from 'src/integrations/postgres/storage/app/ideas';
 import { config } from 'src/utils/navigation';
 
@@ -14,7 +14,7 @@ export const { onSuccess, options } = config('Get ideas list', {
   },
 });
 
-export const handler: Handler<RootGet> = async () => {
+export const handler: Handler<AppIdeasGet> = async () => {
   const ideas = await getListIdeas();
 
   return onSuccess(ideas);
