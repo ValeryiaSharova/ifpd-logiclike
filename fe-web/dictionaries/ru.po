@@ -13,6 +13,20 @@ msgid "components.organisms.Page.title"
 msgstr "IFPD-LL"
 
 msgctxt "base"
+msgid "components.routes.pages.App.button"
+msgstr "Проголосовать"
+
+msgctxt "base"
+msgid "components.routes.pages.App.title"
+msgstr ""
+"Привет! Мы в LogicLike создаем высоконагруженную EdTech-платформу, которая "
+"превращает развитие логики и мышления в увлекательную игру для миллионов "
+"детей по всему миру. Твоя задача — помочь нам проголосовать за самую лучшую "
+"идею и узнать, какие из них станут реализованы!{br}Ты можешь проголосовать "
+"не более чем за 10 идей и не более одного раза за одну идею.{br} Спасибо, "
+"что помогаешь нам развиваться!"
+
+msgctxt "base"
 msgid "components.routes.pages.Error404.text"
 msgstr "Страница не найдена"
 

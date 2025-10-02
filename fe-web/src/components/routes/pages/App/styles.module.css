@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--SIZE_16);
+  align-items: center;
+}
+
+.description {
+  background-color: var(--BLUE_200);
+  padding: var(--SIZE_8);
+  border-radius: var(--SIZE_8);
+  border: 1px solid var(--BLUE_500);
+  width: 50%;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--SIZE_8);
+}
+
+.idea {
+  display: flex;
+  gap: var(--SIZE_8);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.innerBlock {
+  display: flex;
+  gap: var(--SIZE_8);
+}

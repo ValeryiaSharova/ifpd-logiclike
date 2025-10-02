@@ -37,7 +37,10 @@
   --GREY_700: #6b6d71;
   --GREY_900: #313234;
 
+  --BLUE_200: #cedde9;
   --BLUE_500: #4f82a8;
+  --BLUE_600: #3f6d93;
+  --BLUE_700: #325472;
 
   --RED_200: #ffc6cc;
   --RED_500: #fc374d;
@@ -48,6 +51,7 @@
   --GREEN_200: #c2d8c3;
   --GREEN_500: #4c7d54;
   --GREEN_600: #38633f;
+  --GREEN_700: #2d4f34;
 
   --YELLOW_500: #c58f2d;
 
@@ -70,6 +74,7 @@
   --SIZE_20: 20px;
   --SIZE_24: 24px;
   --SIZE_32: 32px;
+  --SIZE_36: 36px;
   --SIZE_40: 40px;
   --SIZE_432: 432px;
   --SIZE_560: 560px;

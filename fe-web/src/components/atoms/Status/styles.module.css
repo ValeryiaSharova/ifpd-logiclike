@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  padding: var(--SIZE_6) var(--SIZE_8);
+  justify-content: space-between;
+  gap: var(--SIZE_4);
+  align-items: center;
+  border-radius: var(--SIZE_6);
+  width: 100%;
+  border: var(--SIZE_1) solid;
+  height: var(--SIZE_36);
+  width: fit-content;
+}
+
+.sky {
+  border-color: var(--BLUE_500);
+  background: var(--BLUE_200);
+  color: var(--BLUE_700);
+}
+
+.red {
+  border-color: var(--RED_500);
+  background: var(--RED_200);
+  color: var(--RED_700);
+}
+
+.green {
+  border-color: var(--GREEN_500);
+  background: var(--GREEN_200);
+  color: var(--GREEN_700);
+}

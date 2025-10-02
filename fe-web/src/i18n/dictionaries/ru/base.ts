@@ -4,6 +4,9 @@
 export const base = {
   'components.organisms.Page.title': 'IFPD-LL',
 
+  'components.routes.pages.App.button': 'Проголосовать',
+  'components.routes.pages.App.title':
+    'Привет! Мы в LogicLike создаем высоконагруженную EdTech-платформу, которая превращает развитие логики и мышления в увлекательную игру для миллионов детей по всему миру. Твоя задача — помочь нам проголосовать за самую лучшую идею и узнать, какие из них станут реализованы!{br}Ты можешь проголосовать не более чем за 10 идей и не более одного раза за одну идею.{br} Спасибо, что помогаешь нам развиваться!',
   'components.routes.pages.Error404.text': 'Страница не найдена',
   'components.routes.pages.Root.title': 'IFPD-LL',
 };
